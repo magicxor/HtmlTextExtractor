@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Text;
 
-namespace HtmlTextExtractor;
+namespace HtmlTextExtractor.Services;
 
 /// <summary>
 /// The class is used for HTML character encoding/decoding,

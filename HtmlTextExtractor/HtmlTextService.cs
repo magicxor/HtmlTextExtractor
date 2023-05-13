@@ -1,4 +1,7 @@
-﻿namespace HtmlTextExtractor;
+﻿using HtmlTextExtractor.Enums;
+using HtmlTextExtractor.Services;
+
+namespace HtmlTextExtractor;
 
 public static class HtmlTextService
 {

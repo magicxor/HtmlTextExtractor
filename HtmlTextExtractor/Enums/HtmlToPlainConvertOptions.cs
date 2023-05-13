@@ -1,4 +1,4 @@
-﻿namespace HtmlTextExtractor;
+﻿namespace HtmlTextExtractor.Enums;
 
 /// <summary>
 /// Defines the available flags which affect how HTML body of a message is converted into plain text.

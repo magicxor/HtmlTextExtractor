@@ -1,8 +1,9 @@
 ﻿using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
+using HtmlTextExtractor.Enums;
 
-namespace HtmlTextExtractor;
+namespace HtmlTextExtractor.Services;
 
 public class HtmlToPlainTextConverter
 {

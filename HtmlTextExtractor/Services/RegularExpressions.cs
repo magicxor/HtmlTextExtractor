@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace HtmlTextExtractor;
+namespace HtmlTextExtractor.Services;
 
 internal static class RegularExpressions
 {
