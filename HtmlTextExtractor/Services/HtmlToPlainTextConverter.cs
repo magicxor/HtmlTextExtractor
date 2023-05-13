@@ -32,14 +32,14 @@ public class HtmlToPlainTextConverter
         var ch = ' ';
         var index1 = 0;
         var lower = htmlText.ToLower();
-        var startIndex1 = lower.IndexOf("<head", StringComparison.InvariantCulture);
+        var startIndex1 = lower.IndexOf("<head", StringComparison.OrdinalIgnoreCase);
         if (startIndex1 > -1)
         {
             var index2 = startIndex1 + "<head".Length;
             if (lower.Length > index2 && (lower[index2] == '>' || char.IsWhiteSpace(lower[index2])))
             {
                 var num3 = startIndex1;
-                startIndex1 = lower.IndexOf("</head", startIndex1 + 5, StringComparison.InvariantCulture);
+                startIndex1 = lower.IndexOf("</head", startIndex1 + 5, StringComparison.OrdinalIgnoreCase);
                 if (startIndex1 > -1)
                 {
                     var num4 = startIndex1 + "</head".Length;
@@ -848,10 +848,10 @@ public class HtmlToPlainTextConverter
         var startIndex = 0;
         while (true)
         {
-            startIndex = input.IndexOf("<!--", startIndex, StringComparison.InvariantCulture);
+            startIndex = input.IndexOf("<!--", startIndex, StringComparison.OrdinalIgnoreCase);
             if (startIndex != -1)
             {
-                var num = input.IndexOf("-->", startIndex, StringComparison.InvariantCulture);
+                var num = input.IndexOf("-->", startIndex, StringComparison.OrdinalIgnoreCase);
                 if (num != -1)
                     input = input.Remove(startIndex, num + 3 - startIndex);
                 else
